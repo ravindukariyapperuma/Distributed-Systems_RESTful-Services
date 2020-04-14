@@ -12,4 +12,12 @@ public class Books {
 	public static List<Book> getBooks() {
 		return books;
 	}
+	
+	public static void addBooks(Book book) {
+		books.add(book);
+	}
+	
+	public static void removeBooks(int id) {
+		books.remove(id-1);
+	}
 }
