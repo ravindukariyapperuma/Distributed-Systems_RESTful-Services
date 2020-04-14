@@ -26,14 +26,14 @@ function getDetails(){
 function addDetails(){
 	
 	var book = {
-            id: $("#newid").val(),
+            id:$("#newid").val(),
             title:$("#title").val(),
             price:$("#price").val()
         }
 	
 	
 	jQuery.ajax({
-        url: "http://localhost:8080/BookService/rest/books/",
+        url: "http://localhost:8080/book_service/rest/books/",
         type: "POST",
         contentType: "application/json",  
         dataType:'json',
@@ -47,7 +47,7 @@ function addDetails(){
 
 function deleteDetails(){
 	jQuery.ajax({
-        url: "http://localhost:8080/BookService/rest/books/" + $("#id").val(),
+        url: "http://localhost:8080/book_service/rest/books/" + $("#id").val(),
         type: "DELETE",
         contentType: "application/json",  
         dataType:'json',
